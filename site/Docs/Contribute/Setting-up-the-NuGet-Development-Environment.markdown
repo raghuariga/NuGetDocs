@@ -27,6 +27,18 @@ To debug the console and UI during development, following these steps:
 1. Now you can run or debug the **VsExtension** project and this would launch a separate instance of VS2012/VS2010 (called the Experimental instance) 
 with a copy of the NuGet vsix installed. What you do in this instance don't affect the main VS instance. 
 
+## Setup Debugging for VS2013
+To debug the console and UI during development, following these steps:
+
+1. Launch Visual Studio as Administrator 
+1. Make sure that the NuGet Extension is UNINSTALLED from your primary instance of VS so your newly compiled one can load into the experimental instance.
+1. Set the **VsExtension** project as the startup project 
+1. Ensure you rebuild the **VsExtension** project. 
+1. Now you can run or debug the **VsExtension** project and this would launch a separate instance of VS2013 
+with a copy of the NuGet vsix installed. What you do in this instance don't affect the main VS instance. 
+
+More Info See http://docs.nuget.org/docs/start-here/installing-nuget
+
 ## Developing NuGet on Linux
 
 ### Developing on OpenSUSE
